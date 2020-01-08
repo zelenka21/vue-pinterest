@@ -1,9 +1,11 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <img class="logo" alt="Zelenka" src="./assets/logo.png">
    <div class="container">
       <div class="button-wrapper">
         <button class="btn" @click="searchUnsplash('car')">Cars</button>
+         <button class="btn" @click="searchUnsplash('bike')">Bikes</button>
+           <button class="btn" @click="searchUnsplash('plane')">Planes</button>
       </div>
       <stack
               :column-min-width="300"
@@ -63,7 +65,7 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -81,8 +83,18 @@ export default {
 }
 .btn {
   font-size: 18px;
-  background-color: #42b983;
+  background-color: #334FFF;
   color: white;
-  padding: 10px 20px;
+  margin: 25px 5px 10px;
+  padding:  10px 30px;
+}
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+.logo {
+  width: 40vw;
+  border-radius: 0;
 }
 </style>
