@@ -7,6 +7,8 @@
          <button class="btn" @click="searchUnsplash('bike')">Bikes</button>
            <button class="btn" @click="searchUnsplash('plane')">Planes</button>
       </div>
+
+
       <stack
               :column-min-width="300"
               :gutter-width="15"
